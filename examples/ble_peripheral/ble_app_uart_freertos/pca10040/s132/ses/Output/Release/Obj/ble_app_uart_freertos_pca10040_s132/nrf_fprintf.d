@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf.c \
+ D:\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -31,5 +31,5 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf.o: \
  ../../../../../../components/libraries/util/nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdarg.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Dev\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf_format.h \
- C:\Dev\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf.h
+ D:\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf_format.h \
+ D:\github\NRF5_SDK_17_1_0\external\fprintf\nrf_fprintf.h

@@ -1,8 +1,8 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/SEGGER_RTT_Syscalls_SES.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
+ D:\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
  ../config/sdk_config.h \
- C:\Dev\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT.h \
- C:\Dev\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT_Conf.h \
+ D:\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT.h \
+ D:\github\NRF5_SDK_17_1_0\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \

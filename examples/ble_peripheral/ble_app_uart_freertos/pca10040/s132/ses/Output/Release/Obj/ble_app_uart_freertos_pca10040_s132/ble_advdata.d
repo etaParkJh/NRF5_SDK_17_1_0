@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advdata.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\common\ble_advdata.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\common\ble_advdata.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\common\ble_advdata.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\common\ble_advdata.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
@@ -43,7 +43,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advdata.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/softdevice/s132/headers/ble_gap.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.h \
  ../../../../../../components/softdevice/s132/headers/ble_types.h \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatt.h

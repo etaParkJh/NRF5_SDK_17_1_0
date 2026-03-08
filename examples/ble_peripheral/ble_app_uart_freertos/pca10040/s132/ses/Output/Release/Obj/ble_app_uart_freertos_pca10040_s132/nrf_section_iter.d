@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_section_iter.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section_iter.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section_iter.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -29,8 +29,8 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_section_iter.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section_iter.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section_iter.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\experimental_section_vars\nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/util/app_util.h

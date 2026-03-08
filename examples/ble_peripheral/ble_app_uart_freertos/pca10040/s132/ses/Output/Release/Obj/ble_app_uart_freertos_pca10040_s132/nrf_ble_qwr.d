@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_qwr.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\nrf_ble_qwr\nrf_ble_qwr.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\nrf_ble_qwr\nrf_ble_qwr.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -30,7 +30,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_qwr.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\nrf_ble_qwr\nrf_ble_qwr.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\nrf_ble_qwr\nrf_ble_qwr.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/softdevice/s132/headers/ble.h \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \

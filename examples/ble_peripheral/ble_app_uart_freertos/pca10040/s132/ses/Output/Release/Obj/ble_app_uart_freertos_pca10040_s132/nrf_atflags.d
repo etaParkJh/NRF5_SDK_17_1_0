@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atflags.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\atomic_flags\nrf_atflags.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\atomic_flags\nrf_atflags.c \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -30,4 +30,4 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atflags.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\atomic_flags\nrf_atflags.h
+ D:\github\NRF5_SDK_17_1_0\components\libraries\atomic_flags\nrf_atflags.h

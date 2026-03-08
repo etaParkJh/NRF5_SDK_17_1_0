@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_timer_freertos.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\timer\app_timer_freertos.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\timer\app_timer_freertos.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -52,7 +52,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_timer_freertos.o: \
  ../../../../../../external/freertos/source/include/list.h \
  ../../../../../../external/freertos/source/include/timers.h \
  ../../../../../../external/freertos/source/include/task.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\timer\app_timer.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\timer\app_timer.h \
  ../../../../../../components/libraries/util/app_error.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \

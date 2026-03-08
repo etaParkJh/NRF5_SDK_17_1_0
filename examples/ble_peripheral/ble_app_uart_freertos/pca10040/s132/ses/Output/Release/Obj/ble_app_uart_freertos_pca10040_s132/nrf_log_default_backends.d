@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_default_backends.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\log\src\nrf_log_default_backends.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\log\src\nrf_log_default_backends.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -51,7 +51,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_default_backends.
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\log\src\nrf_log_internal.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\log\src\nrf_log_internal.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/log/nrf_log_backend_rtt.h

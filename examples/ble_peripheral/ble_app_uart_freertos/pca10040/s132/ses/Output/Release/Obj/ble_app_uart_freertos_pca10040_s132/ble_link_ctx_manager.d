@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_link_ctx_manager.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_link_ctx_manager\ble_link_ctx_manager.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../components/ble/common/ble_conn_state.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \

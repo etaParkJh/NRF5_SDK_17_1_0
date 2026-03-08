@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_nus.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_services\ble_nus\ble_nus.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_services\ble_nus\ble_nus.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -41,7 +41,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_nus.o: \
  ../../../../../../components/softdevice/s132/headers/ble_gatt.h \
  ../../../../../../components/softdevice/s132/headers/ble_gattc.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatts.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_services\ble_nus\ble_nus.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_services\ble_nus\ble_nus.h \
  ../../../../../../components/ble/common/ble_srv_common.h \
  ../../../../../../components/softdevice/s132/headers/ble_types.h \
  ../../../../../../components/libraries/util/app_util.h \

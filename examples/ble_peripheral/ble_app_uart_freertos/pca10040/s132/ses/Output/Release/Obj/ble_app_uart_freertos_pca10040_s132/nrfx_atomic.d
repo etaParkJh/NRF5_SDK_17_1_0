@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_atomic.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic.c \
- C:\Dev\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic.h \
+ D:\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic.c \
+ D:\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -52,4 +52,4 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_atomic.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_sd_def.h \
  ../../../../../../components/softdevice/s132/headers/nrf_soc.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\Dev\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic_internal.h
+ D:\github\NRF5_SDK_17_1_0\modules\nrfx\soc\nrfx_atomic_internal.h

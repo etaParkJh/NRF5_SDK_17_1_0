@@ -1,7 +1,7 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_drv_clock.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\integration\nrfx\legacy\nrf_drv_clock.c \
+ D:\github\NRF5_SDK_17_1_0\integration\nrfx\legacy\nrf_drv_clock.c \
  ../../../../../../components/libraries/util/nordic_common.h \
- C:\Dev\github\NRF5_SDK_17_1_0\integration\nrfx\legacy\nrf_drv_clock.h \
+ D:\github\NRF5_SDK_17_1_0\integration\nrfx\legacy\nrf_drv_clock.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_clock.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \

@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_memobj.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\memobj\nrf_memobj.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\memobj\nrf_memobj.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\memobj\nrf_memobj.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\memobj\nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \

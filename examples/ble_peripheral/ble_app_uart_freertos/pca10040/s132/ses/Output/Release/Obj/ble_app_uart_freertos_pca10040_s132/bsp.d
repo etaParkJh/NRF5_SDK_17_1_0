@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/boards/boards.h \
@@ -57,7 +57,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp.o: \
  ../../../../../../components/boards/pca10040.h \
  ../../../../../../components/libraries/button/app_button.h \
  ../../../../../../components/libraries/util/app_error.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_config.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_config.h \
  ../../../../../../components/libraries/timer/app_timer.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

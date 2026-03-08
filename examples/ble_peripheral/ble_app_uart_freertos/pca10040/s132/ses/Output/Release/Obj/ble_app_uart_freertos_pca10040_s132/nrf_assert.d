@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_assert.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\nrf_assert.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\nrf_assert.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\nrf_assert.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52.h \
@@ -14,11 +14,11 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_assert.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52.h \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\app_error.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\sdk_errors.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\sdk_errors.h \
  ../../../../../../components/softdevice/s132/headers/nrf_error.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\nordic_common.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\util\app_error_weak.h
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\nordic_common.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\util\app_error_weak.h

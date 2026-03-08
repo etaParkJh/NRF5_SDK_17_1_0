@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_srv_common.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\common\ble_srv_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/softdevice/s132/headers/ble_types.h \

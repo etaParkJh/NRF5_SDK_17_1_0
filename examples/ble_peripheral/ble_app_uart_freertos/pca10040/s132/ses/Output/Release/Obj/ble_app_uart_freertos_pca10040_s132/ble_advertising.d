@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advertising.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_advertising\ble_advertising.c \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_advertising\ble_advertising.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -42,7 +42,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advertising.o: \
  ../../../../../../components/softdevice/s132/headers/ble_gatt.h \
  ../../../../../../components/softdevice/s132/headers/ble_gattc.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatts.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\ble\ble_advertising\ble_advertising.h \
+ D:\github\NRF5_SDK_17_1_0\components\ble\ble_advertising\ble_advertising.h \
  ../../../../../../components/softdevice/s132/headers/ble_gap.h \
  ../../../../../../components/softdevice/s132/headers/ble_gattc.h \
  ../../../../../../components/softdevice/s132/headers/nrf_soc.h \

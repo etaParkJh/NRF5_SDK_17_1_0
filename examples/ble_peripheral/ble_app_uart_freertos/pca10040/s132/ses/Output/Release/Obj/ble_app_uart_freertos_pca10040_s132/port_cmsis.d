@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\external\freertos\portable\CMSIS\nrf52\port_cmsis.c \
+ D:\github\NRF5_SDK_17_1_0\external\freertos\portable\CMSIS\nrf52\port_cmsis.c \
  ../../../../../../external/freertos/source/include/FreeRTOS.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \

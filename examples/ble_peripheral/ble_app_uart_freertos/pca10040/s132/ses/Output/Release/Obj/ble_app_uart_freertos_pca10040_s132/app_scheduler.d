@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_scheduler.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\scheduler\app_scheduler.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\scheduler\app_scheduler.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_scheduler.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\scheduler\app_scheduler.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\scheduler\app_scheduler.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \

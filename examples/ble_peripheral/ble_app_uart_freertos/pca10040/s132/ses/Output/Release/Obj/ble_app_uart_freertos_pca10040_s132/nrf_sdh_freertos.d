@@ -1,7 +1,7 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_freertos.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh_freertos.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh_freertos.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh.h \
+ D:\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh_freertos.c \
+ D:\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh_freertos.h \
+ D:\github\NRF5_SDK_17_1_0\components\softdevice\common\nrf_sdh.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/sdk_errors.h \

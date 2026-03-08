@@ -73,6 +73,7 @@
 #define add_FreeRTOS
 
 #ifdef add_FreeRTOS
+#include "nrf_sdh_freertos.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "timers.h"
@@ -132,50 +133,52 @@ static ble_uuid_t m_adv_uuids[]          =                                      
 
 #ifdef add_FreeRTOS
 
-TimerHandle_t task1_timer;                            
-TimerHandle_t task2_timer;                            
+#define TIMER_PERIOD    100
 
-TaskHandle_t m_task1_thread;
-TaskHandle_t m_task2_thread;
+static TimerHandle_t task1_timer;                            
+static TimerHandle_t task2_timer;                            
 
-volatile bool fTask1 = false;
-volatile bool fTask2 = false;
+static TaskHandle_t m_task1_thread;
+static TaskHandle_t m_task2_thread;
 
-uint32_t task1_cnt = 1;
-uint32_t task2_cnt = 0;
+volatile bool fTask = false;
 
-void task1_timer_handler(void)
+uint32_t task_cnt = 0;
+
+static void task1_timer_handler(void)
 {
-    fTask1 = true;
-    task1_cnt+=2;
+    fTask = true;
+    task_cnt++;
 }
 
-void task2_timer_handler(void)
+static void task2_timer_handler(void)
 {
-    fTask2 = true;
-    task2_cnt+=2;
+    fTask = true;
+    task_cnt++;
 }
 
-void task1_thread(void)
+static void task1_thread(void * arg)
 {
+    UNUSED_PARAMETER(arg);
     while(1)
     {
-        if (fTask1 == true)
+        if (fTask)
         {
-            fTask1 = false;
-            printf("[task1] cnt %d\r\n", task1_cnt);
+            fTask = false;
+            printf("[task1] cnt %d\r\n", task_cnt);
         }
     }
 }
 
-void task2_thread(void)
+static void task2_thread(void * arg)
 {
+    UNUSED_PARAMETER(arg);
     while(1)
     {
-        if (fTask2)
+        if (fTask)
         {
-            fTask2 = false;
-            printf("[task2] cnt %d\r\n", task2_cnt);
+            fTask = false;
+            printf("[task2] cnt %d\r\n", task_cnt);
         }
     }
 }
@@ -205,8 +208,8 @@ static void timers_init(void)
     ret_code_t err_code = app_timer_init();
     APP_ERROR_CHECK(err_code);
     #ifdef add_FreeRTOS
-    task1_timer = xTimerCreate("task1", 100, pdTRUE, NULL, task1_timer_handler);
-    task2_timer = xTimerCreate("task2", 100, pdTRUE, NULL, task2_timer_handler);
+    task1_timer = xTimerCreate("task1", TIMER_PERIOD, pdTRUE, NULL, task1_timer_handler);
+    task2_timer = xTimerCreate("task2", TIMER_PERIOD, pdTRUE, NULL, task2_timer_handler);
 
     if ( (NULL == task1_timer) || (NULL == task2_timer))
     {
@@ -795,11 +798,13 @@ int main(void)
     NRF_LOG_INFO("Debug logging for UART over RTT started.");
     #ifdef add_FreeRTOS
 
+    //if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1, &m_task1_thread))
     if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1, &m_task1_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
+    //if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
     if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
@@ -815,12 +820,12 @@ int main(void)
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
-
     nrf_sdh_freertos_init(advertising_start, &erase_bonds);
     vTaskStartScheduler();
     #else
     advertising_start();
     #endif
+
     // Enter main loop.
     for (;;)
     {

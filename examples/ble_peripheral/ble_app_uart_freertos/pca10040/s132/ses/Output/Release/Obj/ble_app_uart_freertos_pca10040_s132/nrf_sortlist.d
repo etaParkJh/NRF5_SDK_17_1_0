@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sortlist.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\sortlist\nrf_sortlist.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\sortlist\nrf_sortlist.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sortlist.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\sortlist\nrf_sortlist.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\sortlist\nrf_sortlist.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

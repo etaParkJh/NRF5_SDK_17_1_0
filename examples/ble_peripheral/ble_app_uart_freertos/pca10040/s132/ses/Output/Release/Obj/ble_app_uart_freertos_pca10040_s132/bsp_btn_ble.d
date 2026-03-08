@@ -1,6 +1,6 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp_btn_ble.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_btn_ble.c \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_btn_ble.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_btn_ble.c \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_btn_ble.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../components/softdevice/s132/headers/ble.h \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
@@ -26,7 +26,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp_btn_ble.o: \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatts.h \
- C:\Dev\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.h \
+ D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/boards/boards.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \

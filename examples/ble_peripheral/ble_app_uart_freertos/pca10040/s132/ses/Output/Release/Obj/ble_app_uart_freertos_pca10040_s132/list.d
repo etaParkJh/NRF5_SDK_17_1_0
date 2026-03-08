@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/list.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\external\freertos\source\list.c \
+ D:\github\NRF5_SDK_17_1_0\external\freertos\source\list.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  ../../../../../../external/freertos/source/include/FreeRTOS.h \

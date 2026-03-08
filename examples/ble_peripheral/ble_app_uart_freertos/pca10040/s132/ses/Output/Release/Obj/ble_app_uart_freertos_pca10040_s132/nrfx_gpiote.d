@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_gpiote.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\modules\nrfx\drivers\src\nrfx_gpiote.c \
+ D:\github\NRF5_SDK_17_1_0\modules\nrfx\drivers\src\nrfx_gpiote.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \

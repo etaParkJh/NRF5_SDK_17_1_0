@@ -1,5 +1,5 @@
 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/main.o: \
- C:\Dev\github\NRF5_SDK_17_1_0\examples\ble_peripheral\ble_app_uart_freertos\main.c \
+ D:\github\NRF5_SDK_17_1_0\examples\ble_peripheral\ble_app_uart_freertos\main.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
@@ -102,6 +102,7 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/main.o: \
  ../../../../../../components/boards/pca10040.h \
  ../../../../../../components/libraries/button/app_button.h \
  ../../../../../../components/libraries/pwr_mgmt/nrf_pwr_mgmt.h \
+ ../../../../../../components/softdevice/common/nrf_sdh_freertos.h \
  ../../../../../../external/freertos/source/include/FreeRTOS.h \
  ../../../config/FreeRTOSConfig.h \
  ../../../../../../external/freertos/source/include/projdefs.h \
