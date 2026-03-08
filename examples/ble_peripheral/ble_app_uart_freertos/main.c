@@ -147,12 +147,14 @@ uint32_t task_cnt = 0;
 
 static void task1_timer_handler(void)
 {
+    printf("[task1_timer_handler]\r\n");
     fTask = true;
     task_cnt++;
 }
 
 static void task2_timer_handler(void)
 {
+    printf("[task2_timer_handler]\r\n");
     fTask = true;
     task_cnt++;
 }
@@ -160,6 +162,7 @@ static void task2_timer_handler(void)
 static void task1_thread(void * arg)
 {
     UNUSED_PARAMETER(arg);
+
     while(1)
     {
         if (fTask)
@@ -173,6 +176,7 @@ static void task1_thread(void * arg)
 static void task2_thread(void * arg)
 {
     UNUSED_PARAMETER(arg);
+
     while(1)
     {
         if (fTask)
@@ -207,16 +211,15 @@ static void timers_init(void)
 {
     ret_code_t err_code = app_timer_init();
     APP_ERROR_CHECK(err_code);
+
     #ifdef add_FreeRTOS
-    task1_timer = xTimerCreate("task1", TIMER_PERIOD, pdTRUE, NULL, task1_timer_handler);
-    task2_timer = xTimerCreate("task2", TIMER_PERIOD, pdTRUE, NULL, task2_timer_handler);
+    task1_timer = xTimerCreate("task1", TIMER_PERIOD, pdTRUE, NULL, (TimerCallbackFunction_t)task1_timer_handler);
+    task2_timer = xTimerCreate("task2", TIMER_PERIOD, pdTRUE, NULL, (TimerCallbackFunction_t)task2_timer_handler);
 
     if ( (NULL == task1_timer) || (NULL == task2_timer))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
-    
-
     #endif
 }
 
@@ -769,7 +772,6 @@ static void advertising_start(void)
     APP_ERROR_CHECK(err_code);
 }
 
-
 /**@brief Application main function.
  */
 int main(void)
@@ -779,12 +781,9 @@ int main(void)
     // Initialize.
     uart_init();
     log_init();
-
-
+    
     timers_init();
-    #ifndef add_FreeRTOS
     buttons_leds_init(&erase_bonds);
-    #endif
     power_management_init();
     ble_stack_init();
     gap_params_init();
@@ -793,34 +792,34 @@ int main(void)
     advertising_init();
     conn_params_init();
 
-    // Start execution.
-    printf("\r\nUART started.\r\n");
-    NRF_LOG_INFO("Debug logging for UART over RTT started.");
     #ifdef add_FreeRTOS
 
     //if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1, &m_task1_thread))
-    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1, &m_task1_thread))
+    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1 , &m_task1_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
     //if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
-    if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
+    if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 2, &m_task2_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
     
+
     // Start application timers.
     if (pdPASS != xTimerStart(task1_timer, OSTIMER_WAIT_FOR_QUEUE))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
+
+
     if (pdPASS != xTimerStart(task2_timer, OSTIMER_WAIT_FOR_QUEUE))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
-    nrf_sdh_freertos_init(advertising_start, &erase_bonds);
+    nrf_sdh_freertos_init((nrf_sdh_freertos_task_hook_t)advertising_start, NULL);
     vTaskStartScheduler();
     #else
     advertising_start();

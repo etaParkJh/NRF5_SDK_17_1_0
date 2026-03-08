@@ -59,7 +59,4 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp.o: \
  ../../../../../../components/libraries/util/app_error.h \
  D:\github\NRF5_SDK_17_1_0\components\libraries\bsp\bsp_config.h \
  ../../../../../../components/libraries/timer/app_timer.h \
- ../../../../../../components/libraries/log/nrf_log_instance.h \
- ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/log/nrf_log_types.h \
- ../../../../../../components/libraries/sortlist/nrf_sortlist.h
+ ../../../config/FreeRTOSConfig.h

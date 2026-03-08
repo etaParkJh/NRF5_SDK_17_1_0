@@ -55,8 +55,4 @@ Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_timer_freertos.o: \
  D:\github\NRF5_SDK_17_1_0\components\libraries\timer\app_timer.h \
  ../../../../../../components/libraries/util/app_error.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- ../../../../../../components/libraries/log/nrf_log_instance.h \
- ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/log/nrf_log_types.h \
- ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h
