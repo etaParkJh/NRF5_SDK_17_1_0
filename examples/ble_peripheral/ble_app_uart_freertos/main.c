@@ -100,7 +100,7 @@
 
 #define APP_ADV_INTERVAL                64                                          /**< The advertising interval (in units of 0.625 ms. This value corresponds to 40 ms). */
 
-#define APP_ADV_DURATION                18000                                       /**< The advertising duration (180 seconds) in units of 10 milliseconds. */
+#define APP_ADV_DURATION                0                                           /**< The advertising duration (180 seconds) in units of 10 milliseconds. */
 
 #define MIN_CONN_INTERVAL               MSEC_TO_UNITS(20, UNIT_1_25_MS)             /**< Minimum acceptable connection interval (20 ms), Connection interval uses 1.25 ms units. */
 #define MAX_CONN_INTERVAL               MSEC_TO_UNITS(75, UNIT_1_25_MS)             /**< Maximum acceptable connection interval (75 ms), Connection interval uses 1.25 ms units. */
@@ -133,60 +133,57 @@ static ble_uuid_t m_adv_uuids[]          =                                      
 
 #ifdef add_FreeRTOS
 
-#define TIMER_PERIOD    100
+#define TIMER_PERIOD    1000
 
-static TimerHandle_t task1_timer;                            
-static TimerHandle_t task2_timer;                            
+static TimerHandle_t task1_timer;                           
+static TimerHandle_t task2_timer;
 
 static TaskHandle_t m_task1_thread;
 static TaskHandle_t m_task2_thread;
 
-volatile bool fTask = false;
+volatile bool fTask1 = false;
+volatile bool fTask2 = false;
 
-uint32_t task_cnt = 0;
+uint32_t task1_cnt = 1;
+uint32_t task2_cnt = 0;
 
-static void task1_timer_handler(void)
+static void task1_timer_handler(TimerHandle_t xTimer)
 {
-    printf("[task1_timer_handler]\r\n");
-    fTask = true;
-    task_cnt++;
+    task1_cnt += 2;
+    fTask1 = true;
 }
 
-static void task2_timer_handler(void)
+static void task2_timer_handler(TimerHandle_t xTimer)
 {
-    printf("[task2_timer_handler]\r\n");
-    fTask = true;
-    task_cnt++;
+    task2_cnt += 2;
+    fTask2 = true;
 }
 
-static void task1_thread(void * arg)
+static void task1_thread(void *arg)
 {
-    UNUSED_PARAMETER(arg);
-
     while(1)
     {
-        if (fTask)
+        if (fTask1)
         {
-            fTask = false;
-            printf("[task1] cnt %d\r\n", task_cnt);
+          printf("[task1] task1_cnt %d\r\n", task1_cnt);
+          fTask1 = false;
+          vTaskDelay(1);
         }
     }
 }
 
-static void task2_thread(void * arg)
+static void task2_thread(void *arg)
 {
-    UNUSED_PARAMETER(arg);
-
     while(1)
     {
-        if (fTask)
+        if (fTask2)
         {
-            fTask = false;
-            printf("[task2] cnt %d\r\n", task_cnt);
+          printf("[task2] task2_cnt\t%d\r\n", task2_cnt);
+          fTask2 = false;        
+          vTaskDelay(1);
         }
     }
 }
-
 #endif
 /**@brief Function for assert macro callback.
  *
@@ -695,7 +692,7 @@ static void advertising_init(void)
 
     init.advdata.name_type          = BLE_ADVDATA_FULL_NAME;
     init.advdata.include_appearance = false;
-    init.advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
+    init.advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;//BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
 
     init.srdata.uuids_complete.uuid_cnt = sizeof(m_adv_uuids) / sizeof(m_adv_uuids[0]);
     init.srdata.uuids_complete.p_uuids  = m_adv_uuids;
@@ -781,7 +778,6 @@ int main(void)
     // Initialize.
     uart_init();
     log_init();
-    
     timers_init();
     buttons_leds_init(&erase_bonds);
     power_management_init();
@@ -793,26 +789,21 @@ int main(void)
     conn_params_init();
 
     #ifdef add_FreeRTOS
-
-    //if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1, &m_task1_thread))
     if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1 , &m_task1_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
-    //if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
     if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 2, &m_task2_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
     
-
     // Start application timers.
     if (pdPASS != xTimerStart(task1_timer, OSTIMER_WAIT_FOR_QUEUE))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
-
 
     if (pdPASS != xTimerStart(task2_timer, OSTIMER_WAIT_FOR_QUEUE))
     {
