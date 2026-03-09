@@ -69,7 +69,7 @@
 #include "bsp_btn_ble.h"
 #include "nrf_pwr_mgmt.h"
 
-
+// FreeRTOS 관련 코드 define 하는 preprocessor
 #define add_FreeRTOS
 
 #ifdef add_FreeRTOS
@@ -100,7 +100,12 @@
 
 #define APP_ADV_INTERVAL                64                                          /**< The advertising interval (in units of 0.625 ms. This value corresponds to 40 ms). */
 
-#define APP_ADV_DURATION                0                                           /**< The advertising duration (180 seconds) in units of 10 milliseconds. */
+#ifdef add_FreeRTOS
+// ble_app_uart 에 FreeRTOS 포팅 후 예제 실행 시, 3분 후 advertising 할 때 mcu 뻗기 때문에 APP_ADV_DURATION 180 -> 0 으로 변경
+#define APP_ADV_DURATION                0                                           
+#else
+#define APP_ADV_DURATION                180                                           /**< The advertising duration (180 seconds) in units of 10 milliseconds. */
+#endif
 
 #define MIN_CONN_INTERVAL               MSEC_TO_UNITS(20, UNIT_1_25_MS)             /**< Minimum acceptable connection interval (20 ms), Connection interval uses 1.25 ms units. */
 #define MAX_CONN_INTERVAL               MSEC_TO_UNITS(75, UNIT_1_25_MS)             /**< Maximum acceptable connection interval (75 ms), Connection interval uses 1.25 ms units. */
@@ -133,6 +138,7 @@ static ble_uuid_t m_adv_uuids[]          =                                      
 
 #ifdef add_FreeRTOS
 
+// 1초마다 Task 의 timer handler 실행
 #define TIMER_PERIOD    1000
 
 static TimerHandle_t task1_timer;                           
@@ -167,7 +173,7 @@ static void task1_thread(void *arg)
         {
           printf("[task1] task1_cnt %d\r\n", task1_cnt);
           fTask1 = false;
-          vTaskDelay(1);
+          vTaskDelay(1); // blocking API
         }
     }
 }
@@ -180,7 +186,7 @@ static void task2_thread(void *arg)
         {
           printf("[task2] task2_cnt\t%d\r\n", task2_cnt);
           fTask2 = false;        
-          vTaskDelay(1);
+          vTaskDelay(1); // blocking API
         }
     }
 }
@@ -692,7 +698,11 @@ static void advertising_init(void)
 
     init.advdata.name_type          = BLE_ADVDATA_FULL_NAME;
     init.advdata.include_appearance = false;
-    init.advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;//BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
+    #ifdef add_FreeRTOS
+    init.advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;
+    #else
+    init.advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
+    #endif
 
     init.srdata.uuids_complete.uuid_cnt = sizeof(m_adv_uuids) / sizeof(m_adv_uuids[0]);
     init.srdata.uuids_complete.p_uuids  = m_adv_uuids;
@@ -789,12 +799,12 @@ int main(void)
     conn_params_init();
 
     #ifdef add_FreeRTOS
-    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1 , &m_task1_thread))
+    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 2 , &m_task1_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
-    if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 2, &m_task2_thread))
+    if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
@@ -811,6 +821,7 @@ int main(void)
     }
 
     nrf_sdh_freertos_init((nrf_sdh_freertos_task_hook_t)advertising_start, NULL);
+
     vTaskStartScheduler();
     #else
     advertising_start();

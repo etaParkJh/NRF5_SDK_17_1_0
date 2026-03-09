@@ -6011,7 +6011,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x8c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
  .debug_macro   0x0000000000000000       0x43 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
  .debug_line    0x0000000000000000      0x4e2 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
- .debug_str     0x0000000000000000    0x6b795 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
+ .debug_str     0x0000000000000000    0x6b7af Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/croutine.o
@@ -6135,7 +6135,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x91 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
  .debug_macro   0x0000000000000000       0x19 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
  .debug_line    0x0000000000000000      0x9ea Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
- .debug_str     0x0000000000000000    0x6c17b Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
+ .debug_str     0x0000000000000000    0x6c195 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/event_groups.o
@@ -6479,7 +6479,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x8c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
  .debug_macro   0x0000000000000000       0x18 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
  .debug_line    0x0000000000000000      0xfb8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
- .debug_str     0x0000000000000000    0x6c083 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
+ .debug_str     0x0000000000000000    0x6c09d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/stream_buffer.o
@@ -11014,7 +11014,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tdata_run is too large to fit in RAM1 memory segment)
                 0x0000000020002b3c                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.bss            0x0000000020002b3c     0x27ec
+.bss            0x0000000020002b3c     0x3bec
                 0x0000000020002b3c                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss.m_host_present
@@ -11233,47 +11233,47 @@ Linker script and memory map
                 0x0000000020003f14        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
  .bss.pucAlignedHeap.0
                 0x0000000020003f18        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
- .bss.ucHeap    0x0000000020003f1c     0x1400 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
+ .bss.ucHeap    0x0000000020003f1c     0x2800 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
  .bss.xNextFreeByte
-                0x000000002000531c        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
+                0x000000002000671c        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
  .bss.uxCriticalNesting
-                0x0000000020005320        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
+                0x0000000020006720        0x4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
  .bss.libc.__user_format_extender
-                0x0000000020005324        0x4 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000020005324                __user_format_extender
+                0x0000000020006724        0x4 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000020006724                __user_format_extender
  *(COMMON)
-                0x0000000020005328                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x00000000000027ec                __bss_size__ = SIZEOF (.bss)
-                0x0000000020005328                __bss_load_end__ = __bss_end__
+                0x0000000020006728                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x0000000000003bec                __bss_size__ = SIZEOF (.bss)
+                0x0000000020006728                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .bss is too large to fit in RAM1 memory segment)
-                0x0000000020005328                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
+                0x0000000020006728                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
 
-.tbss           0x0000000020005328        0x0
-                0x0000000020005328                __tbss_start__ = .
+.tbss           0x0000000020006728        0x0
+                0x0000000020006728                __tbss_start__ = .
  *(.tbss .tbss.*)
-                0x0000000020005328                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
+                0x0000000020006728                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
                 0x0000000000000000                __tbss_size__ = SIZEOF (.tbss)
-                0x0000000020005328                __tbss_load_end__ = __tbss_end__
+                0x0000000020006728                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tbss is too large to fit in RAM1 memory segment)
-                0x0000000020005328                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
+                0x0000000020006728                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
 
-.non_init       0x0000000020005328        0x0
-                0x0000000020005328                __non_init_start__ = .
+.non_init       0x0000000020006728        0x0
+                0x0000000020006728                __non_init_start__ = .
  *(.non_init .non_init.*)
-                0x0000000020005328                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
+                0x0000000020006728                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
                 0x0000000000000000                __non_init_size__ = SIZEOF (.non_init)
-                0x0000000020005328                __non_init_load_end__ = __non_init_end__
+                0x0000000020006728                __non_init_load_end__ = __non_init_end__
                 0x0000000000000001                . = ASSERT (((__non_init_start__ == __non_init_end__) || ((__non_init_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .non_init is too large to fit in RAM1 memory segment)
-                0x0000000020005328                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
+                0x0000000020006728                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
 
-.heap           0x0000000020005328     0x2000
-                0x0000000020005328                __heap_start__ = .
+.heap           0x0000000020006728     0x2000
+                0x0000000020006728                __heap_start__ = .
  *(.heap .heap.*)
-                0x0000000020007328                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
- *fill*         0x0000000020005328     0x2000 
-                0x0000000020007328                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x0000000020008728                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
+ *fill*         0x0000000020006728     0x2000 
+                0x0000000020008728                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
                 0x0000000000002000                __heap_size__ = SIZEOF (.heap)
-                0x0000000020007328                __heap_load_end__ = __heap_end__
+                0x0000000020008728                __heap_load_end__ = __heap_end__
                 0x0000000000000001                . = ASSERT (((__heap_start__ == __heap_end__) || ((__heap_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .heap is too large to fit in RAM1 memory segment)
                 0x000000002000e000                __stack_load_start__ = (__RAM1_segment_start__ + (__RAM1_segment_size__ - 0x2000))
 
@@ -11640,7 +11640,7 @@ LOAD linker stubs
  .debug_line    0x00000000000261ed      0x698 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
  .debug_line    0x0000000000026885      0xdbe Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
 
-.debug_info     0x0000000000000000    0x44323
+.debug_info     0x0000000000000000    0x44324
  .debug_info    0x0000000000000000       0x22 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/thumb_crt0.o
  .debug_info    0x0000000000000022      0x54b Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_backend_rtt.o
  .debug_info    0x000000000000056d      0x77b Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_backend_serial.o
@@ -11697,11 +11697,11 @@ LOAD linker stubs
  .debug_info    0x000000000003bfba      0x2cb Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/list.o
  .debug_info    0x000000000003c285     0x20bb Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/queue.o
  .debug_info    0x000000000003e340     0x2b39 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/tasks.o
- .debug_info    0x0000000000040e79     0x1466 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
- .debug_info    0x00000000000422df      0x1a5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
- .debug_info    0x0000000000042484       0xad Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port.o
- .debug_info    0x0000000000042531      0x8c2 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
- .debug_info    0x0000000000042df3     0x1530 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
+ .debug_info    0x0000000000040e79     0x1467 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
+ .debug_info    0x00000000000422e0      0x1a5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
+ .debug_info    0x0000000000042485       0xad Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port.o
+ .debug_info    0x0000000000042532      0x8c2 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
+ .debug_info    0x0000000000042df4     0x1530 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
 
 .debug_abbrev   0x0000000000000000     0xb05c
  .debug_abbrev  0x0000000000000000       0x12 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/thumb_crt0.o
@@ -11890,7 +11890,7 @@ LOAD linker stubs
  .debug_aranges
                 0x0000000000001808       0x38 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
 
-.debug_str      0x0000000000000000    0xa6d71
+.debug_str      0x0000000000000000    0xa6d8b
  .debug_str     0x0000000000000000       0xb8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/thumb_crt0.o
  .debug_str     0x00000000000000b8    0x799af Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_backend_rtt.o
                                       0x7b8e1 (size before relaxing)
@@ -11902,116 +11902,116 @@ LOAD linker stubs
                                       0x7521e (size before relaxing)
  .debug_str     0x000000000007b30e      0x2e1 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_str_formatter.o
                                       0x73f0c (size before relaxing)
- .debug_str     0x000000000007b5ef     0x1f7d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_button.o
-                                      0x7c2a4 (size before relaxing)
- .debug_str     0x000000000007d56c      0x140 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_error.o
+ .debug_str     0x000000000007b5ef     0x1f97 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_button.o
+                                      0x7c2be (size before relaxing)
+ .debug_str     0x000000000007d586      0x140 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_error.o
                                       0x5ed47 (size before relaxing)
- .debug_str     0x000000000007d6ac      0xa43 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_error_weak.o
+ .debug_str     0x000000000007d6c6      0xa43 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_error_weak.o
                                       0x74c46 (size before relaxing)
- .debug_str     0x000000000007e0ef      0x16f Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_fifo.o
+ .debug_str     0x000000000007e109      0x16f Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_fifo.o
                                       0x6f5c4 (size before relaxing)
- .debug_str     0x000000000007e25e     0x16a4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_uart_fifo.o
+ .debug_str     0x000000000007e278     0x16a4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_uart_fifo.o
                                       0x791fe (size before relaxing)
- .debug_str     0x000000000007f902      0x3cb Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_util_platform.o
+ .debug_str     0x000000000007f91c      0x3cb Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_util_platform.o
                                       0x6013a (size before relaxing)
- .debug_str     0x000000000007fccd      0x3d2 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atflags.o
+ .debug_str     0x000000000007fce7      0x3d2 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atflags.o
                                       0x6f7d1 (size before relaxing)
- .debug_str     0x000000000008009f      0x663 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atomic.o
+ .debug_str     0x00000000000800b9      0x663 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_atomic.o
                                       0x6fb12 (size before relaxing)
- .debug_str     0x0000000000080702      0x137 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_balloc.o
+ .debug_str     0x000000000008071c      0x137 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_balloc.o
                                       0x73c2d (size before relaxing)
- .debug_str     0x0000000000080839      0x10a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf.o
+ .debug_str     0x0000000000080853      0x10a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf.o
                                       0x6f6a3 (size before relaxing)
- .debug_str     0x0000000000080943      0x50c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf_format.o
+ .debug_str     0x000000000008095d      0x50c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_fprintf_format.o
                                       0x6fb9d (size before relaxing)
- .debug_str     0x0000000000080e4f      0x1b4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_memobj.o
+ .debug_str     0x0000000000080e69      0x1b4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_memobj.o
                                       0x71f9d (size before relaxing)
- .debug_str     0x0000000000081003     0x16b8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_pwr_mgmt.o
+ .debug_str     0x000000000008101d     0x16b8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_pwr_mgmt.o
                                       0x7d0e0 (size before relaxing)
- .debug_str     0x00000000000826bb       0xe4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ringbuf.o
+ .debug_str     0x00000000000826d5       0xe4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ringbuf.o
                                       0x708a3 (size before relaxing)
- .debug_str     0x000000000008279f       0x5c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_section_iter.o
+ .debug_str     0x00000000000827b9       0x5c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_section_iter.o
                                       0x6f91c (size before relaxing)
- .debug_str     0x00000000000827fb      0x2e8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sortlist.o
+ .debug_str     0x0000000000082815      0x2e8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sortlist.o
                                       0x71f21 (size before relaxing)
- .debug_str     0x0000000000082ae3       0xf5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_strerror.o
+ .debug_str     0x0000000000082afd       0xf5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_strerror.o
                                       0x6f4d7 (size before relaxing)
- .debug_str     0x0000000000082bd8     0x3c4d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_timer_freertos.o
-                                      0x74dd8 (size before relaxing)
- .debug_str     0x0000000000086825       0x3f Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ses_startup_nrf52.o
+ .debug_str     0x0000000000082bf2     0x3c4d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/app_timer_freertos.o
+                                      0x74df2 (size before relaxing)
+ .debug_str     0x000000000008683f       0x3f Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ses_startup_nrf52.o
                                          0xa7 (size before relaxing)
- .debug_str     0x0000000000086864       0x44 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ses_startup_nrf_common.o
+ .debug_str     0x000000000008687e       0x44 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ses_startup_nrf_common.o
                                          0xac (size before relaxing)
- .debug_str     0x00000000000868a8     0x82a5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/system_nrf52.o
+ .debug_str     0x00000000000868c2     0x82a5 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/system_nrf52.o
                                       0x664e8 (size before relaxing)
- .debug_str     0x000000000008eb4d     0x1496 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/boards.o
+ .debug_str     0x000000000008eb67     0x1496 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/boards.o
                                       0x78a41 (size before relaxing)
- .debug_str     0x000000000008ffe3      0xebc Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_drv_clock.o
+ .debug_str     0x000000000008fffd      0xebc Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_drv_clock.o
                                       0x7bf1f (size before relaxing)
- .debug_str     0x0000000000090e9f      0x489 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_drv_uart.o
+ .debug_str     0x0000000000090eb9      0x489 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_drv_uart.o
                                       0x78912 (size before relaxing)
- .debug_str     0x0000000000091328      0x878 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_clock.o
+ .debug_str     0x0000000000091342      0x878 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_clock.o
                                       0x7b378 (size before relaxing)
- .debug_str     0x0000000000091ba0      0xe07 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_gpiote.o
+ .debug_str     0x0000000000091bba      0xe07 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_gpiote.o
                                       0x7c676 (size before relaxing)
- .debug_str     0x00000000000929a7      0x31c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_prs.o
+ .debug_str     0x00000000000929c1      0x31c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_prs.o
                                       0x7aa7b (size before relaxing)
- .debug_str     0x0000000000092cc3      0x668 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_uart.o
+ .debug_str     0x0000000000092cdd      0x668 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_uart.o
                                       0x7bc2d (size before relaxing)
- .debug_str     0x000000000009332b      0x928 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_uarte.o
+ .debug_str     0x0000000000093345      0x928 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrfx_uarte.o
                                       0x7c0b4 (size before relaxing)
- .debug_str     0x0000000000093c53      0xfe7 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp.o
-                                      0x7a335 (size before relaxing)
- .debug_str     0x0000000000094c3a     0x6ae4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp_btn_ble.o
+ .debug_str     0x0000000000093c6d      0xfe7 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp.o
+                                      0x7a34f (size before relaxing)
+ .debug_str     0x0000000000094c54     0x6ae4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/bsp_btn_ble.o
                                       0x7fc4e (size before relaxing)
- .debug_str     0x000000000009b71e     0x49a7 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/main.o
-                                      0x8df1a (size before relaxing)
- .debug_str     0x00000000000a00c5      0x5b4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/SEGGER_RTT.o
+ .debug_str     0x000000000009b738     0x49a7 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/main.o
+                                      0x8df34 (size before relaxing)
+ .debug_str     0x00000000000a00df      0x5b4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/SEGGER_RTT.o
                                       0x6927d (size before relaxing)
- .debug_str     0x00000000000a0679      0xba4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/SEGGER_RTT_Syscalls_SES.o
+ .debug_str     0x00000000000a0693      0xba4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/SEGGER_RTT_Syscalls_SES.o
                                       0x698b7 (size before relaxing)
- .debug_str     0x00000000000a121d      0x58a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advdata.o
+ .debug_str     0x00000000000a1237      0x58a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advdata.o
                                       0x7699e (size before relaxing)
- .debug_str     0x00000000000a17a7      0x325 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advertising.o
+ .debug_str     0x00000000000a17c1      0x325 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_advertising.o
                                       0x7a1d5 (size before relaxing)
- .debug_str     0x00000000000a1acc      0x30d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_conn_params.o
-                                      0x79c16 (size before relaxing)
- .debug_str     0x00000000000a1dd9      0x869 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_conn_state.o
+ .debug_str     0x00000000000a1ae6      0x30d Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_conn_params.o
+                                      0x79c30 (size before relaxing)
+ .debug_str     0x00000000000a1df3      0x869 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_conn_state.o
                                       0x77e1c (size before relaxing)
- .debug_str     0x00000000000a2642       0x7b Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_link_ctx_manager.o
+ .debug_str     0x00000000000a265c       0x7b Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_link_ctx_manager.o
                                       0x748ce (size before relaxing)
- .debug_str     0x00000000000a26bd      0x484 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_srv_common.o
+ .debug_str     0x00000000000a26d7      0x484 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_srv_common.o
                                       0x6d53a (size before relaxing)
- .debug_str     0x00000000000a2b41      0x48a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_gatt.o
+ .debug_str     0x00000000000a2b5b      0x48a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_gatt.o
                                       0x791a1 (size before relaxing)
- .debug_str     0x00000000000a2fcb      0x211 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_qwr.o
+ .debug_str     0x00000000000a2fe5      0x211 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_ble_qwr.o
                                       0x7742d (size before relaxing)
- .debug_str     0x00000000000a31dc      0x2a8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_nus.o
+ .debug_str     0x00000000000a31f6      0x2a8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/ble_nus.o
                                       0x7a7fc (size before relaxing)
- .debug_str     0x00000000000a3484      0x4d8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh.o
+ .debug_str     0x00000000000a349e      0x4d8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh.o
                                       0x7474c (size before relaxing)
- .debug_str     0x00000000000a395c      0x6d9 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_ble.o
+ .debug_str     0x00000000000a3976      0x6d9 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_ble.o
                                       0x79764 (size before relaxing)
- .debug_str     0x00000000000a4035      0x164 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_soc.o
+ .debug_str     0x00000000000a404f      0x164 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_soc.o
                                       0x736f9 (size before relaxing)
- .debug_str     0x00000000000a4199      0x12c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_freertos.o
-                                      0x77f35 (size before relaxing)
- .debug_str     0x00000000000a42c5      0x15c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/list.o
-                                      0x6adaf (size before relaxing)
- .debug_str     0x00000000000a4421      0x9d4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/queue.o
-                                      0x6c4ab (size before relaxing)
- .debug_str     0x00000000000a4df5     0x1276 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/tasks.o
-                                      0x6d13f (size before relaxing)
- .debug_str     0x00000000000a606b      0x4c6 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
-                                      0x6c936 (size before relaxing)
- .debug_str     0x00000000000a6531       0xf0 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
-                                      0x6b369 (size before relaxing)
- .debug_str     0x00000000000a6621       0x5a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port.o
-                                      0x6b1e7 (size before relaxing)
- .debug_str     0x00000000000a667b      0x20c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
-                                      0x6b7f1 (size before relaxing)
- .debug_str     0x00000000000a6887      0x4ea Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
-                                      0x7c891 (size before relaxing)
+ .debug_str     0x00000000000a41b3      0x12c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_freertos.o
+                                      0x77f4f (size before relaxing)
+ .debug_str     0x00000000000a42df      0x15c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/list.o
+                                      0x6adc9 (size before relaxing)
+ .debug_str     0x00000000000a443b      0x9d4 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/queue.o
+                                      0x6c4c5 (size before relaxing)
+ .debug_str     0x00000000000a4e0f     0x1276 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/tasks.o
+                                      0x6d159 (size before relaxing)
+ .debug_str     0x00000000000a6085      0x4c6 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
+                                      0x6c950 (size before relaxing)
+ .debug_str     0x00000000000a654b       0xf0 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
+                                      0x6b383 (size before relaxing)
+ .debug_str     0x00000000000a663b       0x5a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port.o
+                                      0x6b201 (size before relaxing)
+ .debug_str     0x00000000000a6695      0x20c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
+                                      0x6b80b (size before relaxing)
+ .debug_str     0x00000000000a68a1      0x4ea Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
+                                      0x7c8ab (size before relaxing)
 
 .debug_ranges   0x0000000000000000     0x44f8
  .debug_ranges  0x0000000000000000       0x90 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/thumb_crt0.o
@@ -12134,7 +12134,7 @@ LOAD linker stubs
  .debug_frame   0x0000000000004904       0x7c Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
  .debug_frame   0x0000000000004980       0x98 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
 
-.debug_loc      0x0000000000000000    0x18af3
+.debug_loc      0x0000000000000000    0x18af4
  .debug_loc     0x0000000000000000      0x1af Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_backend_rtt.o
  .debug_loc     0x00000000000001af      0x186 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_backend_serial.o
  .debug_loc     0x0000000000000335       0x31 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_log_default_backends.o
@@ -12186,11 +12186,11 @@ LOAD linker stubs
  .debug_loc     0x000000000001417c       0xaf Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/nrf_sdh_freertos.o
  .debug_loc     0x000000000001422b       0xaf Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/list.o
  .debug_loc     0x00000000000142da     0x1638 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/queue.o
- .debug_loc     0x0000000000015912     0x1e11 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/tasks.o
- .debug_loc     0x0000000000017723      0xb8a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
- .debug_loc     0x00000000000182ad       0x98 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
- .debug_loc     0x0000000000018345       0xf6 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
- .debug_loc     0x000000000001843b      0x6b8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
+ .debug_loc     0x0000000000015912     0x1e12 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/tasks.o
+ .debug_loc     0x0000000000017724      0xb8a Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/timers.o
+ .debug_loc     0x00000000000182ae       0x98 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/heap_1.o
+ .debug_loc     0x0000000000018346       0xf6 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis.o
+ .debug_loc     0x000000000001843c      0x6b8 Output/Release/Obj/ble_app_uart_freertos_pca10040_s132/port_cmsis_systick.o
 
 .debug_pubnames
                 0x0000000000000000    0x1369a
