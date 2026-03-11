@@ -140,12 +140,16 @@ static ble_uuid_t m_adv_uuids[]          =                                      
 
 // 1초마다 Task 의 timer handler 실행
 #define TIMER_PERIOD    1000
+#define TASK_TIME       1000
 
 static TimerHandle_t task1_timer;                           
 static TimerHandle_t task2_timer;
 
 static TaskHandle_t m_task1_thread;
 static TaskHandle_t m_task2_thread;
+static TaskHandle_t m_task3_thread;
+static TaskHandle_t m_task4_thread;
+static TaskHandle_t m_task5_thread;
 
 volatile bool fTask1 = false;
 volatile bool fTask2 = false;
@@ -169,12 +173,8 @@ static void task1_thread(void *arg)
 {
     while(1)
     {
-        if (fTask1)
-        {
-          printf("[task1] task1_cnt %d\r\n", task1_cnt);
-          fTask1 = false;
-          vTaskDelay(1); // blocking API
-        }
+        printf("[task1]\n\r");        
+        vTaskDelay(TASK_TIME); // blocking API
     }
 }
 
@@ -182,14 +182,39 @@ static void task2_thread(void *arg)
 {
     while(1)
     {
-        if (fTask2)
-        {
-          printf("[task2] task2_cnt\t%d\r\n", task2_cnt);
-          fTask2 = false;        
-          vTaskDelay(1); // blocking API
-        }
+        printf("[task2]\n\r");
+        vTaskDelay(TASK_TIME); // blocking API
     }
 }
+
+static void task3_thread(void *arg)
+{
+    while(1)
+    {
+       printf("[task3]\n\r"); 
+       vTaskDelay(TASK_TIME); // blocking API
+    }
+}
+
+static void task4_thread(void *arg)
+{
+    while(1)
+    {
+       printf("[task4]\n\r"); 
+       vTaskDelay(TASK_TIME); // blocking API
+    }
+}
+
+static void task4_thread(void *arg)
+{
+    while(1)
+    {
+       printf("[task4]\n\r"); 
+       vTaskDelay(TASK_TIME); // blocking API
+    }
+}
+
+
 #endif
 /**@brief Function for assert macro callback.
  *
@@ -799,12 +824,27 @@ int main(void)
     conn_params_init();
 
     #ifdef add_FreeRTOS
-    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 2 , &m_task1_thread))
+    if (pdPASS != xTaskCreate(task1_thread, "TASK1", 256, NULL, 1 , &m_task1_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }
 
     if (pdPASS != xTaskCreate(task2_thread, "TASK2", 256, NULL, 1, &m_task2_thread))
+    {
+        APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
+    }
+
+    if (pdPASS != xTaskCreate(task3_thread, "TASK3", 256, NULL, 1, &m_task3_thread))
+    {
+        APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
+    }
+    
+    if (pdPASS != xTaskCreate(task4_thread, "TASK4", 256, NULL, 1, &m_task4_thread))
+    {
+        APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
+    }
+    
+    if (pdPASS != xTaskCreate(task5_thread, "TASK5", 256, NULL, 1, &m_task5_thread))
     {
         APP_ERROR_HANDLER(NRF_ERROR_NO_MEM);
     }

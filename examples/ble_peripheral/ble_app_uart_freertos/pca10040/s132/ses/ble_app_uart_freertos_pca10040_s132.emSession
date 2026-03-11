@@ -51,7 +51,7 @@
  </TraceWindow>
  <Watch1>
   <Watches active="1" update="Never">
-   <Watchpoint expression="err_code" name="err_code" radix="16" linenumber="731" filename="../../../main.c"/>
+   <Watchpoint expression="err_code" name="err_code" radix="16" linenumber="756" filename="../../../main.c"/>
   </Watches>
  </Watch1>
  <Watch2>
@@ -90,7 +90,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="114" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" selected="0" top="62" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="17" y="57" useTextEdit="1" openedFrom="D:/github/NRF5_SDK_17_1_0/external/freertos/source/tasks.c" useBinaryEdit="0" left="0" path="../../../../../../external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h" selected="0" top="32" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="154" useTextEdit="1" openedFrom="D:/github/NRF5_SDK_17_1_0/external/freertos/source/tasks.c" useBinaryEdit="0" left="0" path="../../../../../../external/freertos/source/include/task.h" selected="0" top="128" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="53" y="801" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="796" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="202" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="157" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="72" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/util/app_error.c" selected="0" top="47" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="308" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/common/nrf_sdh_ble.c" selected="0" top="283" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="150" useTextEdit="1" openedFrom="D:/github/NRF5_SDK_17_1_0/components/ble/ble_advertising/ble_advertising.c" useBinaryEdit="0" left="0" path="../../../../../../components/ble/ble_advertising/ble_advertising.h" selected="0" top="125" codecName="UTF-8"/>
